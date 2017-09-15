@@ -24,13 +24,10 @@ body {
 #canvas {
   margin: auto;
   width: 800px;
-  height: 900px;
+  height: 1000px;
   background-color: #ffffff;
 }
 
 .pixel {
   float: left;
-  width: 400px;
-  height: 450px;
-  background-color: red;
 }
