@@ -7,51 +7,22 @@ body {
   color: #ffffff;
 }
 
-#color-pallete {
+#color-selector {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   margin: auto;
   width: 800px;
   height: 80px;
-
   background-color: #dddddd; 
 }
-
-.color-selection {
-  height: 40px;
-  width: 40px;
+#color-input {
+  margin: 1rem;
 }
-
-.color-selection:hover {
-  cursor: pointer;
-}
-
-.selected {
-  border: 2px solid orange;
-}
-
-#pink {
-  background-color: pink;
-}
-
-#red {
-  background-color: red;
-}
-
-#yellow {
-  background-color: yellow;
-}
-
-#green {
-  background-color: green;
-}
-
 
 #canvas {
   margin: auto;
-
   width: 800px;
   height: 900px;
   background-color: #ffffff;
@@ -61,6 +32,5 @@ body {
   float: left;
   width: 400px;
   height: 450px;
-
   background-color: red;
 }

@@ -1,20 +1,27 @@
 let pixels = document.getElementsByClassName('pixel');
-let colorSelections = document.getElementsByClassName('color-selection');
+let colorInput = document.getElementById('color-input');
 
-let selectedColor = '#ffc0cb';
+let selectedColor = colorInput.value;
+let isMouseDown = false;
 
 for (let i = 0; i < pixels.length; i++) {
   let pixel = pixels[i];
   
   pixel.addEventListener('mouseover', function(event) {
-    this.style.background = selectedColor;
+    if(isMouseDown) {
+      this.style.background = selectedColor;
+    }
   });
 }
 
-for (let i = 0; i < colorSelections.length; i++) {
-  let colorSelection = colorSelections[i];
+colorInput.addEventListener('input', function(event) {
+  selectedColor = this.value;
+});
 
-  colorSelection.addEventListener('click', function(event) {
-    console.log(this.value)
-  });
-}
+document.addEventListener('mousedown', function (event) {
+  isMouseDown = true;
+});
+
+document.addEventListener('mouseup', function (event) {
+  isMouseDown = false;
+})
