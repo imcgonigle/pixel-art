@@ -1,10 +1,7 @@
 body {
-  background-color: #333333;
-}
-
-.header {
-  text-align: center;
-  color: #ffffff;
+  font-family: sans-serif;
+  background: linear-gradient(270deg,#5691c8,#457fca);;
+  color: #333;
 }
 
 #color-selector {
@@ -15,7 +12,10 @@ body {
   margin: auto;
   width: 800px;
   height: 80px;
-  background-color: #dddddd; 
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 1px 3px 6px #666;
+  background-color: #ffd700; 
 }
 #color-input {
   margin: 1rem;
@@ -25,6 +25,7 @@ body {
   margin: auto;
   width: 800px;
   height: 1000px;
+  box-shadow: 1px 3px 6px #666;
   background-color: #ffffff;
 }
 
