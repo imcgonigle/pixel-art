@@ -26,6 +26,8 @@ for (let i = 0; i < pixels.length; i++) {
   let pixel = pixels[i];
   
   pixel.addEventListener('mouseover', function(event) {
+    // Check to see if the mouse button is being pressed
+    // before changing the color of a pixel.
     if (event.buttons == 1 || event.buttons == 3) {
       this.style.background = selectedColor;
     }
