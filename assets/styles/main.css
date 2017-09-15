@@ -1,0 +1,66 @@
+body {
+  background-color: #333333;
+}
+
+.header {
+  text-align: center;
+  color: #ffffff;
+}
+
+#color-pallete {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: auto;
+  width: 800px;
+  height: 80px;
+
+  background-color: #dddddd; 
+}
+
+.color-selection {
+  height: 40px;
+  width: 40px;
+}
+
+.color-selection:hover {
+  cursor: pointer;
+}
+
+.selected {
+  border: 2px solid orange;
+}
+
+#pink {
+  background-color: pink;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#green {
+  background-color: green;
+}
+
+
+#canvas {
+  margin: auto;
+
+  width: 800px;
+  height: 900px;
+  background-color: #ffffff;
+}
+
+.pixel {
+  float: left;
+  width: 400px;
+  height: 450px;
+
+  background-color: red;
+}
